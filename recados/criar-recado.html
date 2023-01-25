@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Growdev - Lista de Recados</title>
+        <link rel="stylesheet" href="./styles/index.css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Lato&display=swap"
+            rel="stylesheet"
+        />
+    </head>
+    <body>
+        <main class="flex-center">
+            <div class="wrapper">
+                <h1>Growdev</h1>
+                <h3>Front-end II / Lista de Recados</h3>
+            </div>
+        </main>
+        <section class="flex-center">
+            <div class="wrapper">
+                <div>
+                    <h2 id="titulo">Criar um recado</h2>
+                    <p>Programa Starter Web Full-Stack</p>
+                </div>
+                <form id="form-recado">
+                    <div class="input-wrapper">
+                        <label>Descrição</label>
+                        <input
+                            type="text"
+                            name="description"
+                            id="description"
+                            placeholder="Digite a descrição"
+                        />
+                    </div>
+                    <div class="input-wrapper">
+                        <label>Detalhamento</label>
+                        <input
+                            type="text"
+                            name="detail"
+                            id="detail"
+                            placeholder="Digite o detalhamento"
+                        />
+                    </div>
+                    <div id="submeter">
+                        <button type="button" onclick="criarRecado()">
+                            Submeter
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </section>
+
+        <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+        <script src="./js/api.js"></script>
+        <script src="./js/index.js"></script>
+        <script src="./js/criar-recado.js"></script>
+    </body>
+</html>

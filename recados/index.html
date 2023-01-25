@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Growdev - Lista de Recados</title>
+        <link rel="stylesheet" href="./styles/index.css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Lato&display=swap"
+            rel="stylesheet"
+        />
+    </head>
+    <body>
+        <main class="flex-center">
+            <div class="wrapper">
+                <h1>Growdev</h1>
+                <h3>Front-end II / Lista de Recados</h3>
+            </div>
+        </main>
+        <section class="flex-center">
+            <div class="wrapper">
+                <div style="width: 180px; margin-top: 12px">
+                    <a href="criar-recado.html" style="text-decoration: none">
+                        <div class="card" style="display: inline-block">
+                            Criar novo recado +
+                        </div>
+                    </a>
+                </div>
+                <div>
+                    <h2>Listagem de recados</h2>
+                    <p>Programa Starter Web Full-Stack</p>
+                </div>
+                <div id="recados">
+                    <ul id="recados-lista">
+                        <li>Abc teste</li>
+                        <li>Abc teste</li>
+                        <li>Abc teste</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+        <script src="./js/api.js"></script>
+        <script src="./js/index.js"></script>
+    </body>
+</html>
